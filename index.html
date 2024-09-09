@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./js/constants.js" defer type="module"></script>
+  <script src="./js/script.js" defer type="module"></script>
+  <title>Timer</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <div class="timer">
+        <span class="hours">00</span>
+        <p class="point">:</p>
+        <span class="minutes">05</span>
+        <p class="point">:</p>
+        <span class="seconds">00</span>
+      </div>
+      <div class="progress">
+        <p class="line"></p>
+      </div>
+      <div class="buttons">
+        <button class="btn-start">Start</button>
+        <button class="btn-pause">Pause</button>
+        <button class="btn-reset">Reset</button>
+      </div>
+    </div>
+    <div class="modal">
+      <p>Установите время</p>
+      <form action="" class="form">
+        <div class="one">
+          <input type="number" min="0" max="59" value="0" id="hour">
+          <label for="hour">Hours</label>
+        </div>
+        <span>:</span>
+        <div class="one">
+          <input type="number" min="0" max="59" value="5" id="minute">
+          <label for="minute">Mins</label>
+        </div>
+        <span>:</span>
+        <div class="one">
+          <input type="number" min="0" max="59" value="0" id="sec">
+          <label for="sec">Sec</label>
+        </div>
+      </form>
+      <button class="btn-ok">OK</button>
+    </div>
+  </div>
+</body>
+</html>
